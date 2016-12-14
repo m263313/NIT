@@ -1,7 +1,12 @@
 /**
  * Created by chaika on 09.02.16.
  */
+<<<<<<< HEAD
 /*var Pizza_List = require('./data/Pizza_List');
+=======
+var Pizza_List = require('./data/Pizza_List');
+var Liqpay= require('./liqpay.js');
+>>>>>>> 57a8a0e92779d38c50c4e900c67f20fdb36b435b
 exports.getPizzaList = function(req, res) {
     res.send(Pizza_List);
 };
@@ -40,4 +45,8 @@ exports.createOrder = function(req, res) {
         data: data,
         signature: signature
     });
+<<<<<<< HEAD
 };*/
+=======
+};
+>>>>>>> 57a8a0e92779d38c50c4e900c67f20fdb36b435b

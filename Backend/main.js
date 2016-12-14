@@ -5,6 +5,7 @@ var express = require('express');
 var path = require('path');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
+<<<<<<< HEAD
 var db = require('./mongodb');
 
 function configureEndpoints(app) {
@@ -16,14 +17,33 @@ function configureEndpoints(app) {
     app.get('/api/get-pizza-list/', api.getPizzaList);
     app.post('/api/create-order/', api.createOrder);
 */
+=======
+
+function configureEndpoints(app) {
+    var pages = require('./pages');
+    var api = require('./api');
+
+    //Налаштування URL за якими буде відповідати сервер
+    //Отримання списку піц
+    app.get('/api/get-pizza-list/', api.getPizzaList);
+    app.post('/api/create-order/', api.createOrder);
+
+>>>>>>> 57a8a0e92779d38c50c4e900c67f20fdb36b435b
     //Сторінки
     //Головна сторінка
     app.get('/', pages.mainPage);
 
     //Сторінка замовлення
+<<<<<<< HEAD
  //   app.get('/order.html', pages.orderPage);
 
   app.use(express.static(path.join(__dirname, '../Frontend/')));
+=======
+    app.get('/order.html', pages.orderPage);
+
+    //Якщо не підійшов жоден url, тоді повертаємо файли з папки www
+    app.use(express.static(path.join(__dirname, '../Frontend/www')));
+>>>>>>> 57a8a0e92779d38c50c4e900c67f20fdb36b435b
 }
 
 function startServer(port) {
