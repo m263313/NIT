@@ -1,6 +1,5 @@
 <% include common/header.ejs %>
 
-<<<<<<< HEAD
  
      <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -94,74 +93,29 @@
 
     
 
-<!-- Container (TOUR Section) -->
-<div id="methods" class="bg-1">
-  <div class="container">
-    <h3 class="text-center">Оберіть функцію</h3>
-      <p class="text-center">Ми робимо Ваше навчання простішим.<br> Час допомагати один одному.</p>
-    <hr>
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img id="image" src="src/images/file.png"  width="179px" height="100px">
-          <p><strong>Створити свою папку</strong></p>
-            <button class="btn" data-toggle="modal" data-target="#myModalCreateFolder">Створити папку</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail" >
-          <img id="image" src="src/images/glass.png" width="179px" height="100px">
-          <p><strong>Переглянути всі існуючі матеріали</strong></p>
-            <button class="btn" data-toggle="modal" data-target="#myModalShowFolder">Переглянути всі</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img id="image" src="src/images/sign.jpg"  width="179px" height="100px">
-            <p><strong>Питання і відповіді</strong></p>
-            <button class="btn" data-toggle="modal" data-target="#" >Форум</button>
-        </div>
-      </div>
+<div class="container-fluid text-center">
+    <h2>Що ви можете?</h2>
+  <br>
+  <div class="row">
+    <div class="col-sm-4" id="item">
+      <span class="glyphicon glyphicon-folder-open logo-small" data-toggle="modal" data-target="#myModalCreateFolder"></span>
+      <h4>Створити директорію</h4>
+      <p>Оберіть предмет і діліться корисними матеріалами</p>
     </div>
-      <hr>
-  </div>   
+    <div class="col-sm-4" id="item">
+      <span class="glyphicon glyphicon-list logo-small"></span>
+      <h4>Переглянути всі створені директорії</h4>
+      <p>Тут ви можете знайти багато корисного</p>
+    </div>
+    <div class="col-sm-4" id="item" >
+      <span class="glyphicon glyphicon-user logo-small" ></span>
+      <h4>Поради</h4>
+      <p>Якщо не знайшов, те що тобы треба ,звернись за допомогою до друзів</p>
+    </div>
+  </div> 
+    <br><br>
 </div>
-   
-       <div class="modal fade" id="myModalShowFolder" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-list-alt"></span> Переглянути матеріали </h4>
-        </div>
-        <div class="modal-body">
-          <form role="form" name="contact_form" onsubmit="return validate_form ( );">
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-education"></span> Введіть назву предмету </label>
-              <input type="text" class="form-control" id="name" placeholder="Введіть назву предмету">
-            </div>
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span>Ваш логин:</label>
-              <input type="text" pattern="^[a-zA-Z]+$" name="contact_name" class="form-control" id="usrname" placeholder="Введіть Ваш логін або ім'я">
-            </div>
-              
-              
-              <button type="submit" class="btn btn-block">Переглянути матеріали 
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Відмінити
-          </button>
-          <p>Need <a href="#">help?</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
+
     
      <div class="modal fade" id="myModalCreateFolder" role="dialog">
     <div class="modal-dialog">
@@ -170,7 +124,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-folder-open"></span> Створити папку </h4>
+          <h4><span class="glyphicon glyphicon-folder-open"></span> Створити директорію </h4>
         </div>
         <div class="modal-body">
           <form role="form" name="contact_form" onsubmit="return validate_form ( );">
@@ -202,93 +156,5 @@
       </div>
     </div>
   </div>
-=======
-<div class="discount-panel">
-        <div class="discount-before"></div>
-        <div class="discount-title">Цього тижня на все</div>
-        <div class="discount-text">20%</div>
-    </div>
-<div class="main-container  container-fluid">
-    <div class="row">
-        <div class="left-panel">
-            <div class="page-title">
-                <h2>
-                    <span class="count-tile">Усі піци</span>
-                    <span class="badge orange pizza-count">8</span>
-                </h2>
-            </div>
-            <div class="all-pizza-type-wrap">
-                <ul class="nav nav-pills all-pizza-type">
-                    <li role="presentation" class="pizza-filter-button" id="all">
-                        <a href="#" id="all">
-                            Усі
-                        </a>
-                    </li>
-                    <li role="presentation" class="pizza-filter-button" id="meat">
-                        <a href="#" id="meat">
-                            Мясні
-                        </a>
-                    </li>
-                    <li role="presentation" class="pizza-filter-button" id="pineapples">
-                        <a href="#" id="pineapple">
-                            З ананасами
-                        </a>
-                    </li>
-                    <li role="presentation" class="pizza-filter-button" id="mushrooms">
-                        <a href="#" id="mushroom">
-                            З грибами
-                        </a>
-                    </li>
-                    <li role="presentation" class="pizza-filter-button" id="ocean">
-                        <a href="#" id="ocean">
-                            З морепродуктами
-                        </a>
-                    </li>
-                    <li role="presentation" class="pizza-filter-button" id="tomato">
-                        <a href="#" id="tomato">
-                            Вега
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="row pizza-list" id="pizza_list">
-              
-            </div>
-    </div>
-    </div>
-    </div>
-<div class="right-panel">
-    <div class="r1">
-                <span class="order-list-title">
-                    Замовлення
-                    <span class="badge orange orders-count-span">0</span>
-                </span>
-        
-                <span class="clear-order-wrap clear-order">
-                    Очистити замовлення
-                </span>
-        
-    </div>
-    <div class="all-orders r2" id="cart">
-        <div class="tmp">
-        <div class="no-order-text">Пусто в холодильнику?<br>Замовте піцу! </div>
-            </div>
-        </div>
-    <div class="order-state r3">
-                <span class="sum-title" >
-                    Сума замовлення
-                </span>
-                <span class="sum-number" >0 грн</span>
-        <div class="do-order-button">
-           <a href="/order.html"  type="button" class="btn btn-warning btn-lg btn-block button-order" id="bt">
-                Замовити
-                </a>
-            
-        </div>
-
-    </div>
-</div>
->>>>>>> 57a8a0e92779d38c50c4e900c67f20fdb36b435b
 
 <% include common/footer.ejs %>
